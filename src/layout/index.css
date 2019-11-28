@@ -1,0 +1,41 @@
+.c-layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: chartreuse;
+}
+
+.left-l{
+    order: 0;
+    height: 100%;
+    width: 10%;
+    background-color: chocolate;
+}
+
+.head-l{
+    order: 1;
+    height: 10%;
+    width: 90%;
+    background-color: red;
+}
+
+.content-l{
+    order: 2;
+    height: 85%;
+    width: 90%;
+    background-color: rgb(54, 153, 199);
+}
+
+.footer-l{
+    order: 3;
+    height: 5%;
+    width: 90%;
+    background-color: rgb(134, 130, 126);
+}
