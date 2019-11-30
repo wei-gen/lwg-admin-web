@@ -1,70 +1,77 @@
-.menu{
+.sider-con{
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+}
+
+.sider-con .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 15%;
+    height: 7%;
+}
+
+.sider-con .logo span{
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+}
+
+.sider-con .menu{
+    width: 100%;
+    /* border-radius: 8px; */
     overflow: hidden;
 }
 
-.item{
-    border-top: 1px solid #2980b9;
+.sider-con .menu .item{
+
     overflow: hidden;
 }
 
-.btn{
+.sider-con .menu .item:hover{
+    cursor:pointer;
+}
+
+.sider-con .menu .item .btn{
     display: block;
     padding: 16px 20px;
-    background: #3498db;
+
     color: white;
     position: relative;
 }
 
-.btn:before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background: #3498db;
-    left: 20px;
-    bottom: -7px;
-    transform: rotate(45deg);
-}
-
 /* 图标，但是现在还没有 */
-.btn i{
+.sider-con .menu .item .btn i{
     margin-right: 10px;
+    height: 20px;
+    width: 20px;
 }
 
-.smenu{
-    background: #333;
+.sider-con .menu .item .menu-link{
+    background-color: rgb(65, 56, 56);
     overflow: hidden;
     transition: max-height 0.3s;
     max-height: 0;
 }
 
-.smenu a{
+.sider-con .menu .item .menu-link a{
     display: block;
     padding: 16px 26px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     margin: 4px 0;
     position: relative;
+    line-height: 15px;
+    height: 15px;
 }
 
-.smenu a::before{
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: #3498db;
-    left: 0;
-    top: 0;
-    transition: 0.3s;
-    opacity: 0;
+.sider-con .menu .item:hover .menu-link:hover{
+    background-color: rgb(29, 16, 77);
 }
 
-.smenu a:hover:before{
-    opacity: 1;
-}
 
-.item:target .smenu{
+.sider-con .menu .item:hover .menu-link{
     max-height: 10em;
 }
