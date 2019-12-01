@@ -58,17 +58,16 @@
 
 .sider-con .menu .item .menu-link a{
     display: block;
-    padding: 16px 26px;
+    padding: 16px 21px 16px 51px;
     color: white;
     font-size: 15px;
-    margin: 4px 0;
     position: relative;
     line-height: 15px;
     height: 15px;
 }
 
-.sider-con .menu .item:hover .menu-link:hover{
-    background-color: rgb(29, 16, 77);
+.sider-con .menu .item:hover .menu-link:hover a:hover{
+    background-color: rgb(109, 83, 201);
 }
 
 

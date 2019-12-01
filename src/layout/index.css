@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: chartreuse;
 }
 
 .left-l{
@@ -23,7 +22,6 @@
     order: 1;
     height: 7%;
     width: 87%;
-    background-color: red;
 }
 
 .content-l{
